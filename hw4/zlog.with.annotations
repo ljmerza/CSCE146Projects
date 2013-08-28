@@ -1,0 +1,1163 @@
+Main:  begin execution
+Main:  entire list
+ZORK This is a dump of the 91 dominoes.
+X(N   0   0)(N   1   0)(N   1   1)(N   2   0)(N   2   1)(N   2   2)(N   3   0)(N   3   1)(N   3   2)(N   3   3)(N   4   0)(N   4   1)(N   4   2)(N   4   3)(N   4   4)(N   5   0)(N   5   1)(N   5   2)(N   5   3)(N   5   4)(N   5   5)(N   6   0)(N   6   1)(N   6   2)(N   6   3)(N   6   4)(N   6   5)(N   6   6)(N   7   0)(N   7   1)(N   7   2)(N   7   3)(N   7   4)(N   7   5)(N   7   6)(N   7   7)(N   8   0)(N   8   1)(N   8   2)(N   8   3)(N   8   4)(N   8   5)(N   8   6)(N   8   7)(N   8   8)(N   9   0)(N   9   1)(N   9   2)(N   9   3)(N   9   4)(N   9   5)(N   9   6)(N   9   7)(N   9   8)(N   9   9)(N  10   0)(N  10   1)(N  10   2)(N  10   3)(N  10   4)(N  10   5)(N  10   6)(N  10   7)(N  10   8)(N  10   9)(N  10  10)(N  11   0)(N  11   1)(N  11   2)(N  11   3)(N  11   4)(N  11   5)(N  11   6)(N  11   7)(N  11   8)(N  11   9)(N  11  10)(N  11  11)(N  12   0)(N  12   1)(N  12   2)(N  12   3)(N  12   4)(N  12   5)(N  12   6)(N  12   7)(N  12   8)(N  12   9)(N  12  10)(N  12  11)(N  12  12)X
+XX
+ 
+ZORK Each time I enter the 'extend' method I print out the current chain I
+     am working on plus the current hand.
+extendCurrent 0: XX
+extendHand 0: X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(N   6   0)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+ZORK Inside my loop I print out the current chain I am working on, the next domino
+     to be tested (to see if that domino extends the chain, and the current hand
+     value to see what dominoes are available for use.
+     Look below about 12 lines to see how to read these lines.
+TESTcurr 1: 0 (0) XX
+TESTdom  1: 0 (0) (N   2   2)
+TESThand 1: 0 (0) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(N   6   0)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 1: 1 (0) XX
+TESTdom  1: 1 (0) (N  11   5)
+TESThand 1: 1 (0) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(N   6   0)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 1: 2 (0) XX
+TESTdom  1: 2 (0) (N   8   3)
+TESThand 1: 2 (0) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(N   6   0)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 1: 3 (0) XX
+TESTdom  1: 3 (0) (N  10   5)
+TESThand 1: 3 (0) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(N   6   0)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+ZORK These lines are to be read as follows.  The '1:' says that I am at recursion
+     level 1 (indexing 1-up so the level 1 means I am in the FIRST call to the
+     method).  The '4' means that I am looking at the domino at subscript 4 in the
+     list of dominoes.  the '(0)' means that I am looking for a match with the
+     integer '0'.  In the dump of lists of dominoes, I have prefixed and
+     suffixed an 'X' to the output string just so I can verify what I am looking at.
+     The first line thus says that my current longest chain is empty.
+     The second line says I am testing the domino at subscript 4, indexing 0-up.
+     The third line is the state of the current list--no dominoes have been used
+     yet so their 'used' values are all 'N' for "NO".
+TESTcurr 1: 4 (0) XX
+TESTdom  1: 4 (0) (N  12   4)
+TESThand 1: 4 (0) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(N   6   0)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 1: 5 (0) XX
+TESTdom  1: 5 (0) (N   8   7)
+TESThand 1: 5 (0) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(N   6   0)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+ZORK Here is the point at which I find the first domino that works. Note that
+     I have to flip it end for end.  I do this with a method called 'flipsides'.
+TESTcurr 1: 6 (0) XX
+TESTdom  1: 6 (0) (N   6   0)
+TESThand 1: 6 (0) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(N   6   0)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+ADDEDTOhand 1: 6 (0) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+extendCurrent 1: X(Y   0   6)X
+extendHand 1: X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 2: 0 (6) X(Y   0   6)X
+TESTdom  2: 0 (6) (N   2   2)
+TESThand 2: 0 (6) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 2: 1 (6) X(Y   0   6)X
+TESTdom  2: 1 (6) (N  11   5)
+TESThand 2: 1 (6) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 2: 2 (6) X(Y   0   6)X
+TESTdom  2: 2 (6) (N   8   3)
+TESThand 2: 2 (6) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 2: 3 (6) X(Y   0   6)X
+TESTdom  2: 3 (6) (N  10   5)
+TESThand 2: 3 (6) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 2: 4 (6) X(Y   0   6)X
+TESTdom  2: 4 (6) (N  12   4)
+TESThand 2: 4 (6) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 2: 5 (6) X(Y   0   6)X
+TESTdom  2: 5 (6) (N   8   7)
+TESThand 2: 5 (6) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 2: 7 (6) X(Y   0   6)X
+TESTdom  2: 7 (6) (N   8   2)
+TESThand 2: 7 (6) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 2: 8 (6) X(Y   0   6)X
+TESTdom  2: 8 (6) (N   6   5)
+TESThand 2: 8 (6) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+ADDEDTOhand 2: 8 (6) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+extendCurrent 2: X(Y   0   6)(Y   6   5)X
+extendHand 2: X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 3: 0 (5) X(Y   0   6)(Y   6   5)X
+TESTdom  3: 0 (5) (N   2   2)
+TESThand 3: 0 (5) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 3: 1 (5) X(Y   0   6)(Y   6   5)X
+TESTdom  3: 1 (5) (N  11   5)
+TESThand 3: 1 (5) X(N   2   2)(N  11   5)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+ADDEDTOhand 3: 1 (5) X(N   2   2)(Y   5  11)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+extendCurrent 3: X(Y   0   6)(Y   6   5)(Y   5  11)X
+extendHand 3: X(N   2   2)(Y   5  11)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 0 (11) X(Y   0   6)(Y   6   5)(Y   5  11)X
+TESTdom  4: 0 (11) (N   2   2)
+TESThand 4: 0 (11) X(N   2   2)(Y   5  11)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 2 (11) X(Y   0   6)(Y   6   5)(Y   5  11)X
+TESTdom  4: 2 (11) (N   8   3)
+TESThand 4: 2 (11) X(N   2   2)(Y   5  11)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 3 (11) X(Y   0   6)(Y   6   5)(Y   5  11)X
+TESTdom  4: 3 (11) (N  10   5)
+TESThand 4: 3 (11) X(N   2   2)(Y   5  11)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 4 (11) X(Y   0   6)(Y   6   5)(Y   5  11)X
+TESTdom  4: 4 (11) (N  12   4)
+TESThand 4: 4 (11) X(N   2   2)(Y   5  11)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 5 (11) X(Y   0   6)(Y   6   5)(Y   5  11)X
+TESTdom  4: 5 (11) (N   8   7)
+TESThand 4: 5 (11) X(N   2   2)(Y   5  11)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 7 (11) X(Y   0   6)(Y   6   5)(Y   5  11)X
+TESTdom  4: 7 (11) (N   8   2)
+TESThand 4: 7 (11) X(N   2   2)(Y   5  11)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 9 (11) X(Y   0   6)(Y   6   5)(Y   5  11)X
+TESTdom  4: 9 (11) (N   5   2)
+TESThand 4: 9 (11) X(N   2   2)(Y   5  11)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 10 (11) X(Y   0   6)(Y   6   5)(Y   5  11)X
+TESTdom  4: 10 (11) (N   5   0)
+TESThand 4: 10 (11) X(N   2   2)(Y   5  11)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 11 (11) X(Y   0   6)(Y   6   5)(Y   5  11)X
+TESTdom  4: 11 (11) (N   4   1)
+TESThand 4: 11 (11) X(N   2   2)(Y   5  11)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+ZORK At this point I cannot extend the '11' and the recursion starts backing
+     upward through the chain.  I dump the longest chain found so far and work
+     upward; note that the recursion level is getting smaller.
+     Note also in the next 'TEST' block that I am picking up the subscripts
+     where I left off after the '(0 6)' was found.
+DONENEWLONGEST 4: X(Y   0   6)(Y   6   5)(Y   5  11)X
+DONEhand       4: X(N   2   2)(Y   5  11)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+BACKFROMhand 3: 1 (5) X(N   2   2)(N   5  11)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 3: 2 (5) X(Y   0   6)(Y   6   5)X
+TESTdom  3: 2 (5) (N   8   3)
+TESThand 3: 2 (5) X(N   2   2)(N   5  11)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 3: 3 (5) X(Y   0   6)(Y   6   5)X
+TESTdom  3: 3 (5) (N  10   5)
+TESThand 3: 3 (5) X(N   2   2)(N   5  11)(N   8   3)(N  10   5)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+ADDEDTOhand 3: 3 (5) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+extendCurrent 3: X(Y   0   6)(Y   6   5)(Y   5  10)X
+extendHand 3: X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 0 (10) X(Y   0   6)(Y   6   5)(Y   5  10)X
+TESTdom  4: 0 (10) (N   2   2)
+TESThand 4: 0 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 1 (10) X(Y   0   6)(Y   6   5)(Y   5  10)X
+TESTdom  4: 1 (10) (N   5  11)
+TESThand 4: 1 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 2 (10) X(Y   0   6)(Y   6   5)(Y   5  10)X
+TESTdom  4: 2 (10) (N   8   3)
+TESThand 4: 2 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 4 (10) X(Y   0   6)(Y   6   5)(Y   5  10)X
+TESTdom  4: 4 (10) (N  12   4)
+TESThand 4: 4 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 5 (10) X(Y   0   6)(Y   6   5)(Y   5  10)X
+TESTdom  4: 5 (10) (N   8   7)
+TESThand 4: 5 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 7 (10) X(Y   0   6)(Y   6   5)(Y   5  10)X
+TESTdom  4: 7 (10) (N   8   2)
+TESThand 4: 7 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 9 (10) X(Y   0   6)(Y   6   5)(Y   5  10)X
+TESTdom  4: 9 (10) (N   5   2)
+TESThand 4: 9 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 10 (10) X(Y   0   6)(Y   6   5)(Y   5  10)X
+TESTdom  4: 10 (10) (N   5   0)
+TESThand 4: 10 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 11 (10) X(Y   0   6)(Y   6   5)(Y   5  10)X
+TESTdom  4: 11 (10) (N   4   1)
+TESThand 4: 11 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+DONENEWLONGEST 4: X(Y   0   6)(Y   6   5)(Y   5  10)X
+DONEhand       4: X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+BACKFROMhand 3: 3 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 3: 4 (5) X(Y   0   6)(Y   6   5)X
+TESTdom  3: 4 (5) (N  12   4)
+TESThand 3: 4 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 3: 5 (5) X(Y   0   6)(Y   6   5)X
+TESTdom  3: 5 (5) (N   8   7)
+TESThand 3: 5 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 3: 7 (5) X(Y   0   6)(Y   6   5)X
+TESTdom  3: 7 (5) (N   8   2)
+TESThand 3: 7 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 3: 9 (5) X(Y   0   6)(Y   6   5)X
+TESTdom  3: 9 (5) (N   5   2)
+TESThand 3: 9 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+ADDEDTOhand 3: 9 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+extendCurrent 3: X(Y   0   6)(Y   6   5)(Y   5   2)X
+extendHand 3: X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 0 (2) X(Y   0   6)(Y   6   5)(Y   5   2)X
+TESTdom  4: 0 (2) (N   2   2)
+TESThand 4: 0 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+ADDEDTOhand 4: 0 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+extendCurrent 4: X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)X
+extendHand 4: X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 5: 1 (2) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)X
+TESTdom  5: 1 (2) (N   5  11)
+TESThand 5: 1 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 5: 2 (2) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)X
+TESTdom  5: 2 (2) (N   8   3)
+TESThand 5: 2 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 5: 3 (2) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)X
+TESTdom  5: 3 (2) (N   5  10)
+TESThand 5: 3 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 5: 4 (2) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)X
+TESTdom  5: 4 (2) (N  12   4)
+TESThand 5: 4 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 5: 5 (2) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)X
+TESTdom  5: 5 (2) (N   8   7)
+TESThand 5: 5 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 5: 7 (2) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)X
+TESTdom  5: 7 (2) (N   8   2)
+TESThand 5: 7 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   8   2)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+ADDEDTOhand 5: 7 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+extendCurrent 5: X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+extendHand 5: X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 1 (8) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+TESTdom  6: 1 (8) (N   5  11)
+TESThand 6: 1 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 2 (8) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+TESTdom  6: 2 (8) (N   8   3)
+TESThand 6: 2 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+ADDEDTOhand 6: 2 (8) X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+extendCurrent 6: X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   3)X
+extendHand 6: X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 7: 1 (3) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   3)X
+TESTdom  7: 1 (3) (N   5  11)
+TESThand 7: 1 (3) X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 7: 3 (3) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   3)X
+TESTdom  7: 3 (3) (N   5  10)
+TESThand 7: 3 (3) X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 7: 4 (3) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   3)X
+TESTdom  7: 4 (3) (N  12   4)
+TESThand 7: 4 (3) X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 7: 5 (3) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   3)X
+TESTdom  7: 5 (3) (N   8   7)
+TESThand 7: 5 (3) X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 7: 10 (3) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   3)X
+TESTdom  7: 10 (3) (N   5   0)
+TESThand 7: 10 (3) X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 7: 11 (3) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   3)X
+TESTdom  7: 11 (3) (N   4   1)
+TESThand 7: 11 (3) X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+DONENEWLONGEST 7: X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   3)X
+DONEhand       7: X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+BACKFROMhand 6: 2 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 3 (8) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+TESTdom  6: 3 (8) (N   5  10)
+TESThand 6: 3 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 4 (8) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+TESTdom  6: 4 (8) (N  12   4)
+TESThand 6: 4 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 5 (8) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+TESTdom  6: 5 (8) (N   8   7)
+TESThand 6: 5 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+ADDEDTOhand 6: 5 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+extendCurrent 6: X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   7)X
+extendHand 6: X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 7: 1 (7) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   7)X
+TESTdom  7: 1 (7) (N   5  11)
+TESThand 7: 1 (7) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 7: 2 (7) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   7)X
+TESTdom  7: 2 (7) (N   8   3)
+TESThand 7: 2 (7) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 7: 3 (7) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   7)X
+TESTdom  7: 3 (7) (N   5  10)
+TESThand 7: 3 (7) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 7: 4 (7) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   7)X
+TESTdom  7: 4 (7) (N  12   4)
+TESThand 7: 4 (7) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 7: 10 (7) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   7)X
+TESTdom  7: 10 (7) (N   5   0)
+TESThand 7: 10 (7) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 7: 11 (7) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   7)X
+TESTdom  7: 11 (7) (N   4   1)
+TESThand 7: 11 (7) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+DONENEWLONGEST 7: X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   7)X
+DONEhand       7: X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+BACKFROMhand 6: 5 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 10 (8) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+TESTdom  6: 10 (8) (N   5   0)
+TESThand 6: 10 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 11 (8) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+TESTdom  6: 11 (8) (N   4   1)
+TESThand 6: 11 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+BACKFROMhand 5: 7 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 5: 10 (2) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)X
+TESTdom  5: 10 (2) (N   5   0)
+TESThand 5: 10 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 5: 11 (2) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   2)X
+TESTdom  5: 11 (2) (N   4   1)
+TESThand 5: 11 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+BACKFROMhand 4: 0 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 1 (2) X(Y   0   6)(Y   6   5)(Y   5   2)X
+TESTdom  4: 1 (2) (N   5  11)
+TESThand 4: 1 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 2 (2) X(Y   0   6)(Y   6   5)(Y   5   2)X
+TESTdom  4: 2 (2) (N   8   3)
+TESThand 4: 2 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 3 (2) X(Y   0   6)(Y   6   5)(Y   5   2)X
+TESTdom  4: 3 (2) (N   5  10)
+TESThand 4: 3 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 4 (2) X(Y   0   6)(Y   6   5)(Y   5   2)X
+TESTdom  4: 4 (2) (N  12   4)
+TESThand 4: 4 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 5 (2) X(Y   0   6)(Y   6   5)(Y   5   2)X
+TESTdom  4: 5 (2) (N   8   7)
+TESThand 4: 5 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 7 (2) X(Y   0   6)(Y   6   5)(Y   5   2)X
+TESTdom  4: 7 (2) (N   2   8)
+TESThand 4: 7 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+ADDEDTOhand 4: 7 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+extendCurrent 4: X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)X
+extendHand 4: X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 5: 0 (8) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)X
+TESTdom  5: 0 (8) (N   2   2)
+TESThand 5: 0 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 5: 1 (8) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)X
+TESTdom  5: 1 (8) (N   5  11)
+TESThand 5: 1 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 5: 2 (8) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)X
+TESTdom  5: 2 (8) (N   8   3)
+TESThand 5: 2 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+ADDEDTOhand 5: 2 (8) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+extendCurrent 5: X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+extendHand 5: X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 0 (3) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+TESTdom  6: 0 (3) (N   2   2)
+TESThand 6: 0 (3) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 1 (3) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+TESTdom  6: 1 (3) (N   5  11)
+TESThand 6: 1 (3) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 3 (3) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+TESTdom  6: 3 (3) (N   5  10)
+TESThand 6: 3 (3) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 4 (3) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+TESTdom  6: 4 (3) (N  12   4)
+TESThand 6: 4 (3) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 5 (3) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+TESTdom  6: 5 (3) (N   8   7)
+TESThand 6: 5 (3) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 10 (3) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+TESTdom  6: 10 (3) (N   5   0)
+TESThand 6: 10 (3) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 11 (3) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+TESTdom  6: 11 (3) (N   4   1)
+TESThand 6: 11 (3) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+BACKFROMhand 5: 2 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 5: 3 (8) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)X
+TESTdom  5: 3 (8) (N   5  10)
+TESThand 5: 3 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 5: 4 (8) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)X
+TESTdom  5: 4 (8) (N  12   4)
+TESThand 5: 4 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 5: 5 (8) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)X
+TESTdom  5: 5 (8) (N   8   7)
+TESThand 5: 5 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+ADDEDTOhand 5: 5 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+extendCurrent 5: X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+extendHand 5: X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 0 (7) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+TESTdom  6: 0 (7) (N   2   2)
+TESThand 6: 0 (7) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 1 (7) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+TESTdom  6: 1 (7) (N   5  11)
+TESThand 6: 1 (7) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 2 (7) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+TESTdom  6: 2 (7) (N   8   3)
+TESThand 6: 2 (7) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 3 (7) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+TESTdom  6: 3 (7) (N   5  10)
+TESThand 6: 3 (7) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 4 (7) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+TESTdom  6: 4 (7) (N  12   4)
+TESThand 6: 4 (7) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 10 (7) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+TESTdom  6: 10 (7) (N   5   0)
+TESThand 6: 10 (7) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 6: 11 (7) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+TESTdom  6: 11 (7) (N   4   1)
+TESThand 6: 11 (7) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+BACKFROMhand 5: 5 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 5: 10 (8) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)X
+TESTdom  5: 10 (8) (N   5   0)
+TESThand 5: 10 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 5: 11 (8) X(Y   0   6)(Y   6   5)(Y   5   2)(Y   2   8)X
+TESTdom  5: 11 (8) (N   4   1)
+TESThand 5: 11 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(Y   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+BACKFROMhand 4: 7 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 10 (2) X(Y   0   6)(Y   6   5)(Y   5   2)X
+TESTdom  4: 10 (2) (N   5   0)
+TESThand 4: 10 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 4: 11 (2) X(Y   0   6)(Y   6   5)(Y   5   2)X
+TESTdom  4: 11 (2) (N   4   1)
+TESThand 4: 11 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(Y   5   2)(N   5   0)(N   4   1)X
+
+BACKFROMhand 3: 9 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 3: 10 (5) X(Y   0   6)(Y   6   5)X
+TESTdom  3: 10 (5) (N   5   0)
+TESThand 3: 10 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+ADDEDTOhand 3: 10 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(N   5   2)(Y   5   0)(N   4   1)X
+
+extendCurrent 3: X(Y   0   6)(Y   6   5)(Y   5   0)X
+extendHand 3: X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(N   5   2)(Y   5   0)(N   4   1)X
+
+TESTcurr 4: 0 (0) X(Y   0   6)(Y   6   5)(Y   5   0)X
+TESTdom  4: 0 (0) (N   2   2)
+TESThand 4: 0 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(N   5   2)(Y   5   0)(N   4   1)X
+
+TESTcurr 4: 1 (0) X(Y   0   6)(Y   6   5)(Y   5   0)X
+TESTdom  4: 1 (0) (N   5  11)
+TESThand 4: 1 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(N   5   2)(Y   5   0)(N   4   1)X
+
+TESTcurr 4: 2 (0) X(Y   0   6)(Y   6   5)(Y   5   0)X
+TESTdom  4: 2 (0) (N   8   3)
+TESThand 4: 2 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(N   5   2)(Y   5   0)(N   4   1)X
+
+TESTcurr 4: 3 (0) X(Y   0   6)(Y   6   5)(Y   5   0)X
+TESTdom  4: 3 (0) (N   5  10)
+TESThand 4: 3 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(N   5   2)(Y   5   0)(N   4   1)X
+
+TESTcurr 4: 4 (0) X(Y   0   6)(Y   6   5)(Y   5   0)X
+TESTdom  4: 4 (0) (N  12   4)
+TESThand 4: 4 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(N   5   2)(Y   5   0)(N   4   1)X
+
+TESTcurr 4: 5 (0) X(Y   0   6)(Y   6   5)(Y   5   0)X
+TESTdom  4: 5 (0) (N   8   7)
+TESThand 4: 5 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(N   5   2)(Y   5   0)(N   4   1)X
+
+TESTcurr 4: 7 (0) X(Y   0   6)(Y   6   5)(Y   5   0)X
+TESTdom  4: 7 (0) (N   2   8)
+TESThand 4: 7 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(N   5   2)(Y   5   0)(N   4   1)X
+
+TESTcurr 4: 9 (0) X(Y   0   6)(Y   6   5)(Y   5   0)X
+TESTdom  4: 9 (0) (N   5   2)
+TESThand 4: 9 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(N   5   2)(Y   5   0)(N   4   1)X
+
+TESTcurr 4: 11 (0) X(Y   0   6)(Y   6   5)(Y   5   0)X
+TESTdom  4: 11 (0) (N   4   1)
+TESThand 4: 11 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(N   5   2)(Y   5   0)(N   4   1)X
+
+BACKFROMhand 3: 10 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 3: 11 (5) X(Y   0   6)(Y   6   5)X
+TESTdom  3: 11 (5) (N   4   1)
+TESThand 3: 11 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(Y   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+BACKFROMhand 2: 8 (6) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 2: 9 (6) X(Y   0   6)X
+TESTdom  2: 9 (6) (N   5   2)
+TESThand 2: 9 (6) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 2: 10 (6) X(Y   0   6)X
+TESTdom  2: 10 (6) (N   5   0)
+TESThand 2: 10 (6) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 2: 11 (6) X(Y   0   6)X
+TESTdom  2: 11 (6) (N   4   1)
+TESThand 2: 11 (6) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   0   6)(N   2   8)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+BACKFROMhand 1: 6 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 1: 7 (0) XX
+TESTdom  1: 7 (0) (N   2   8)
+TESThand 1: 7 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 1: 8 (0) XX
+TESTdom  1: 8 (0) (N   6   5)
+TESThand 1: 8 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 1: 9 (0) XX
+TESTdom  1: 9 (0) (N   5   2)
+TESThand 1: 9 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+TESTcurr 1: 10 (0) XX
+TESTdom  1: 10 (0) (N   5   0)
+TESThand 1: 10 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(N   5   0)(N   4   1)X
+
+ADDEDTOhand 1: 10 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+extendCurrent 1: X(Y   0   5)X
+extendHand 1: X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 2: 0 (5) X(Y   0   5)X
+TESTdom  2: 0 (5) (N   2   2)
+TESThand 2: 0 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 2: 1 (5) X(Y   0   5)X
+TESTdom  2: 1 (5) (N   5  11)
+TESThand 2: 1 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+ADDEDTOhand 2: 1 (5) X(N   2   2)(Y   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+extendCurrent 2: X(Y   0   5)(Y   5  11)X
+extendHand 2: X(N   2   2)(Y   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 0 (11) X(Y   0   5)(Y   5  11)X
+TESTdom  3: 0 (11) (N   2   2)
+TESThand 3: 0 (11) X(N   2   2)(Y   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 2 (11) X(Y   0   5)(Y   5  11)X
+TESTdom  3: 2 (11) (N   8   3)
+TESThand 3: 2 (11) X(N   2   2)(Y   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 3 (11) X(Y   0   5)(Y   5  11)X
+TESTdom  3: 3 (11) (N   5  10)
+TESThand 3: 3 (11) X(N   2   2)(Y   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 4 (11) X(Y   0   5)(Y   5  11)X
+TESTdom  3: 4 (11) (N  12   4)
+TESThand 3: 4 (11) X(N   2   2)(Y   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 5 (11) X(Y   0   5)(Y   5  11)X
+TESTdom  3: 5 (11) (N   8   7)
+TESThand 3: 5 (11) X(N   2   2)(Y   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 6 (11) X(Y   0   5)(Y   5  11)X
+TESTdom  3: 6 (11) (N   0   6)
+TESThand 3: 6 (11) X(N   2   2)(Y   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 7 (11) X(Y   0   5)(Y   5  11)X
+TESTdom  3: 7 (11) (N   2   8)
+TESThand 3: 7 (11) X(N   2   2)(Y   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 8 (11) X(Y   0   5)(Y   5  11)X
+TESTdom  3: 8 (11) (N   6   5)
+TESThand 3: 8 (11) X(N   2   2)(Y   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 9 (11) X(Y   0   5)(Y   5  11)X
+TESTdom  3: 9 (11) (N   5   2)
+TESThand 3: 9 (11) X(N   2   2)(Y   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 11 (11) X(Y   0   5)(Y   5  11)X
+TESTdom  3: 11 (11) (N   4   1)
+TESThand 3: 11 (11) X(N   2   2)(Y   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+BACKFROMhand 2: 1 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 2: 2 (5) X(Y   0   5)X
+TESTdom  2: 2 (5) (N   8   3)
+TESThand 2: 2 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 2: 3 (5) X(Y   0   5)X
+TESTdom  2: 3 (5) (N   5  10)
+TESThand 2: 3 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+ADDEDTOhand 2: 3 (5) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+extendCurrent 2: X(Y   0   5)(Y   5  10)X
+extendHand 2: X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 0 (10) X(Y   0   5)(Y   5  10)X
+TESTdom  3: 0 (10) (N   2   2)
+TESThand 3: 0 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 1 (10) X(Y   0   5)(Y   5  10)X
+TESTdom  3: 1 (10) (N   5  11)
+TESThand 3: 1 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 2 (10) X(Y   0   5)(Y   5  10)X
+TESTdom  3: 2 (10) (N   8   3)
+TESThand 3: 2 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 4 (10) X(Y   0   5)(Y   5  10)X
+TESTdom  3: 4 (10) (N  12   4)
+TESThand 3: 4 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 5 (10) X(Y   0   5)(Y   5  10)X
+TESTdom  3: 5 (10) (N   8   7)
+TESThand 3: 5 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 6 (10) X(Y   0   5)(Y   5  10)X
+TESTdom  3: 6 (10) (N   0   6)
+TESThand 3: 6 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 7 (10) X(Y   0   5)(Y   5  10)X
+TESTdom  3: 7 (10) (N   2   8)
+TESThand 3: 7 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 8 (10) X(Y   0   5)(Y   5  10)X
+TESTdom  3: 8 (10) (N   6   5)
+TESThand 3: 8 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 9 (10) X(Y   0   5)(Y   5  10)X
+TESTdom  3: 9 (10) (N   5   2)
+TESThand 3: 9 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 11 (10) X(Y   0   5)(Y   5  10)X
+TESTdom  3: 11 (10) (N   4   1)
+TESThand 3: 11 (10) X(N   2   2)(N   5  11)(N   8   3)(Y   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+BACKFROMhand 2: 3 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 2: 4 (5) X(Y   0   5)X
+TESTdom  2: 4 (5) (N  12   4)
+TESThand 2: 4 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 2: 5 (5) X(Y   0   5)X
+TESTdom  2: 5 (5) (N   8   7)
+TESThand 2: 5 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 2: 6 (5) X(Y   0   5)X
+TESTdom  2: 6 (5) (N   0   6)
+TESThand 2: 6 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 2: 7 (5) X(Y   0   5)X
+TESTdom  2: 7 (5) (N   2   8)
+TESThand 2: 7 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 2: 8 (5) X(Y   0   5)X
+TESTdom  2: 8 (5) (N   6   5)
+TESThand 2: 8 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(N   6   5)(N   5   2)(Y   0   5)(N   4   1)X
+
+ADDEDTOhand 2: 8 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+extendCurrent 2: X(Y   0   5)(Y   5   6)X
+extendHand 2: X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 0 (6) X(Y   0   5)(Y   5   6)X
+TESTdom  3: 0 (6) (N   2   2)
+TESThand 3: 0 (6) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 1 (6) X(Y   0   5)(Y   5   6)X
+TESTdom  3: 1 (6) (N   5  11)
+TESThand 3: 1 (6) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 2 (6) X(Y   0   5)(Y   5   6)X
+TESTdom  3: 2 (6) (N   8   3)
+TESThand 3: 2 (6) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 3 (6) X(Y   0   5)(Y   5   6)X
+TESTdom  3: 3 (6) (N   5  10)
+TESThand 3: 3 (6) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 4 (6) X(Y   0   5)(Y   5   6)X
+TESTdom  3: 4 (6) (N  12   4)
+TESThand 3: 4 (6) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 5 (6) X(Y   0   5)(Y   5   6)X
+TESTdom  3: 5 (6) (N   8   7)
+TESThand 3: 5 (6) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 6 (6) X(Y   0   5)(Y   5   6)X
+TESTdom  3: 6 (6) (N   0   6)
+TESThand 3: 6 (6) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   0   6)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+ADDEDTOhand 3: 6 (6) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   6   0)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+extendCurrent 3: X(Y   0   5)(Y   5   6)(Y   6   0)X
+extendHand 3: X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   6   0)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 0 (0) X(Y   0   5)(Y   5   6)(Y   6   0)X
+TESTdom  4: 0 (0) (N   2   2)
+TESThand 4: 0 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   6   0)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 1 (0) X(Y   0   5)(Y   5   6)(Y   6   0)X
+TESTdom  4: 1 (0) (N   5  11)
+TESThand 4: 1 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   6   0)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 2 (0) X(Y   0   5)(Y   5   6)(Y   6   0)X
+TESTdom  4: 2 (0) (N   8   3)
+TESThand 4: 2 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   6   0)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 3 (0) X(Y   0   5)(Y   5   6)(Y   6   0)X
+TESTdom  4: 3 (0) (N   5  10)
+TESThand 4: 3 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   6   0)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 4 (0) X(Y   0   5)(Y   5   6)(Y   6   0)X
+TESTdom  4: 4 (0) (N  12   4)
+TESThand 4: 4 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   6   0)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 5 (0) X(Y   0   5)(Y   5   6)(Y   6   0)X
+TESTdom  4: 5 (0) (N   8   7)
+TESThand 4: 5 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   6   0)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 7 (0) X(Y   0   5)(Y   5   6)(Y   6   0)X
+TESTdom  4: 7 (0) (N   2   8)
+TESThand 4: 7 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   6   0)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 9 (0) X(Y   0   5)(Y   5   6)(Y   6   0)X
+TESTdom  4: 9 (0) (N   5   2)
+TESThand 4: 9 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   6   0)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 11 (0) X(Y   0   5)(Y   5   6)(Y   6   0)X
+TESTdom  4: 11 (0) (N   4   1)
+TESThand 4: 11 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(Y   6   0)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+BACKFROMhand 3: 6 (6) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 7 (6) X(Y   0   5)(Y   5   6)X
+TESTdom  3: 7 (6) (N   2   8)
+TESThand 3: 7 (6) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 9 (6) X(Y   0   5)(Y   5   6)X
+TESTdom  3: 9 (6) (N   5   2)
+TESThand 3: 9 (6) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 11 (6) X(Y   0   5)(Y   5   6)X
+TESTdom  3: 11 (6) (N   4   1)
+TESThand 3: 11 (6) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(Y   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+BACKFROMhand 2: 8 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 2: 9 (5) X(Y   0   5)X
+TESTdom  2: 9 (5) (N   5   2)
+TESThand 2: 9 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+ADDEDTOhand 2: 9 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+extendCurrent 2: X(Y   0   5)(Y   5   2)X
+extendHand 2: X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 0 (2) X(Y   0   5)(Y   5   2)X
+TESTdom  3: 0 (2) (N   2   2)
+TESThand 3: 0 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+ADDEDTOhand 3: 0 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+extendCurrent 3: X(Y   0   5)(Y   5   2)(Y   2   2)X
+extendHand 3: X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 1 (2) X(Y   0   5)(Y   5   2)(Y   2   2)X
+TESTdom  4: 1 (2) (N   5  11)
+TESThand 4: 1 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 2 (2) X(Y   0   5)(Y   5   2)(Y   2   2)X
+TESTdom  4: 2 (2) (N   8   3)
+TESThand 4: 2 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 3 (2) X(Y   0   5)(Y   5   2)(Y   2   2)X
+TESTdom  4: 3 (2) (N   5  10)
+TESThand 4: 3 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 4 (2) X(Y   0   5)(Y   5   2)(Y   2   2)X
+TESTdom  4: 4 (2) (N  12   4)
+TESThand 4: 4 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 5 (2) X(Y   0   5)(Y   5   2)(Y   2   2)X
+TESTdom  4: 5 (2) (N   8   7)
+TESThand 4: 5 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 6 (2) X(Y   0   5)(Y   5   2)(Y   2   2)X
+TESTdom  4: 6 (2) (N   6   0)
+TESThand 4: 6 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 7 (2) X(Y   0   5)(Y   5   2)(Y   2   2)X
+TESTdom  4: 7 (2) (N   2   8)
+TESThand 4: 7 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+ADDEDTOhand 4: 7 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+extendCurrent 4: X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+extendHand 4: X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 1 (8) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+TESTdom  5: 1 (8) (N   5  11)
+TESThand 5: 1 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 2 (8) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+TESTdom  5: 2 (8) (N   8   3)
+TESThand 5: 2 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+ADDEDTOhand 5: 2 (8) X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+extendCurrent 5: X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   3)X
+extendHand 5: X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 6: 1 (3) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   3)X
+TESTdom  6: 1 (3) (N   5  11)
+TESThand 6: 1 (3) X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 6: 3 (3) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   3)X
+TESTdom  6: 3 (3) (N   5  10)
+TESThand 6: 3 (3) X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 6: 4 (3) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   3)X
+TESTdom  6: 4 (3) (N  12   4)
+TESThand 6: 4 (3) X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 6: 5 (3) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   3)X
+TESTdom  6: 5 (3) (N   8   7)
+TESThand 6: 5 (3) X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 6: 6 (3) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   3)X
+TESTdom  6: 6 (3) (N   6   0)
+TESThand 6: 6 (3) X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 6: 8 (3) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   3)X
+TESTdom  6: 8 (3) (N   5   6)
+TESThand 6: 8 (3) X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 6: 11 (3) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   3)X
+TESTdom  6: 11 (3) (N   4   1)
+TESThand 6: 11 (3) X(Y   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+BACKFROMhand 5: 2 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 3 (8) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+TESTdom  5: 3 (8) (N   5  10)
+TESThand 5: 3 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 4 (8) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+TESTdom  5: 4 (8) (N  12   4)
+TESThand 5: 4 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 5 (8) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+TESTdom  5: 5 (8) (N   8   7)
+TESThand 5: 5 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+ADDEDTOhand 5: 5 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+extendCurrent 5: X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   7)X
+extendHand 5: X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 6: 1 (7) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   7)X
+TESTdom  6: 1 (7) (N   5  11)
+TESThand 6: 1 (7) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 6: 2 (7) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   7)X
+TESTdom  6: 2 (7) (N   8   3)
+TESThand 6: 2 (7) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 6: 3 (7) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   7)X
+TESTdom  6: 3 (7) (N   5  10)
+TESThand 6: 3 (7) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 6: 4 (7) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   7)X
+TESTdom  6: 4 (7) (N  12   4)
+TESThand 6: 4 (7) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 6: 6 (7) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   7)X
+TESTdom  6: 6 (7) (N   6   0)
+TESThand 6: 6 (7) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 6: 8 (7) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   7)X
+TESTdom  6: 8 (7) (N   5   6)
+TESThand 6: 8 (7) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 6: 11 (7) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)(Y   8   7)X
+TESTdom  6: 11 (7) (N   4   1)
+TESThand 6: 11 (7) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+BACKFROMhand 5: 5 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 6 (8) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+TESTdom  5: 6 (8) (N   6   0)
+TESThand 5: 6 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 8 (8) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+TESTdom  5: 8 (8) (N   5   6)
+TESThand 5: 8 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 11 (8) X(Y   0   5)(Y   5   2)(Y   2   2)(Y   2   8)X
+TESTdom  5: 11 (8) (N   4   1)
+TESThand 5: 11 (8) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+BACKFROMhand 4: 7 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 8 (2) X(Y   0   5)(Y   5   2)(Y   2   2)X
+TESTdom  4: 8 (2) (N   5   6)
+TESThand 4: 8 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 11 (2) X(Y   0   5)(Y   5   2)(Y   2   2)X
+TESTdom  4: 11 (2) (N   4   1)
+TESThand 4: 11 (2) X(Y   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+BACKFROMhand 3: 0 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 1 (2) X(Y   0   5)(Y   5   2)X
+TESTdom  3: 1 (2) (N   5  11)
+TESThand 3: 1 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 2 (2) X(Y   0   5)(Y   5   2)X
+TESTdom  3: 2 (2) (N   8   3)
+TESThand 3: 2 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 3 (2) X(Y   0   5)(Y   5   2)X
+TESTdom  3: 3 (2) (N   5  10)
+TESThand 3: 3 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 4 (2) X(Y   0   5)(Y   5   2)X
+TESTdom  3: 4 (2) (N  12   4)
+TESThand 3: 4 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 5 (2) X(Y   0   5)(Y   5   2)X
+TESTdom  3: 5 (2) (N   8   7)
+TESThand 3: 5 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 6 (2) X(Y   0   5)(Y   5   2)X
+TESTdom  3: 6 (2) (N   6   0)
+TESThand 3: 6 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 7 (2) X(Y   0   5)(Y   5   2)X
+TESTdom  3: 7 (2) (N   2   8)
+TESThand 3: 7 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+ADDEDTOhand 3: 7 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+extendCurrent 3: X(Y   0   5)(Y   5   2)(Y   2   8)X
+extendHand 3: X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 0 (8) X(Y   0   5)(Y   5   2)(Y   2   8)X
+TESTdom  4: 0 (8) (N   2   2)
+TESThand 4: 0 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 1 (8) X(Y   0   5)(Y   5   2)(Y   2   8)X
+TESTdom  4: 1 (8) (N   5  11)
+TESThand 4: 1 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 2 (8) X(Y   0   5)(Y   5   2)(Y   2   8)X
+TESTdom  4: 2 (8) (N   8   3)
+TESThand 4: 2 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+ADDEDTOhand 4: 2 (8) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+extendCurrent 4: X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+extendHand 4: X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 0 (3) X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+TESTdom  5: 0 (3) (N   2   2)
+TESThand 5: 0 (3) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 1 (3) X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+TESTdom  5: 1 (3) (N   5  11)
+TESThand 5: 1 (3) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 3 (3) X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+TESTdom  5: 3 (3) (N   5  10)
+TESThand 5: 3 (3) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 4 (3) X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+TESTdom  5: 4 (3) (N  12   4)
+TESThand 5: 4 (3) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 5 (3) X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+TESTdom  5: 5 (3) (N   8   7)
+TESThand 5: 5 (3) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 6 (3) X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+TESTdom  5: 6 (3) (N   6   0)
+TESThand 5: 6 (3) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 8 (3) X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+TESTdom  5: 8 (3) (N   5   6)
+TESThand 5: 8 (3) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 11 (3) X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   3)X
+TESTdom  5: 11 (3) (N   4   1)
+TESThand 5: 11 (3) X(N   2   2)(N   5  11)(Y   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+BACKFROMhand 4: 2 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 3 (8) X(Y   0   5)(Y   5   2)(Y   2   8)X
+TESTdom  4: 3 (8) (N   5  10)
+TESThand 4: 3 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 4 (8) X(Y   0   5)(Y   5   2)(Y   2   8)X
+TESTdom  4: 4 (8) (N  12   4)
+TESThand 4: 4 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 5 (8) X(Y   0   5)(Y   5   2)(Y   2   8)X
+TESTdom  4: 5 (8) (N   8   7)
+TESThand 4: 5 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+ADDEDTOhand 4: 5 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+extendCurrent 4: X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+extendHand 4: X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 0 (7) X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+TESTdom  5: 0 (7) (N   2   2)
+TESThand 5: 0 (7) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 1 (7) X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+TESTdom  5: 1 (7) (N   5  11)
+TESThand 5: 1 (7) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 2 (7) X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+TESTdom  5: 2 (7) (N   8   3)
+TESThand 5: 2 (7) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 3 (7) X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+TESTdom  5: 3 (7) (N   5  10)
+TESThand 5: 3 (7) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 4 (7) X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+TESTdom  5: 4 (7) (N  12   4)
+TESThand 5: 4 (7) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 6 (7) X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+TESTdom  5: 6 (7) (N   6   0)
+TESThand 5: 6 (7) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 8 (7) X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+TESTdom  5: 8 (7) (N   5   6)
+TESThand 5: 8 (7) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 5: 11 (7) X(Y   0   5)(Y   5   2)(Y   2   8)(Y   8   7)X
+TESTdom  5: 11 (7) (N   4   1)
+TESThand 5: 11 (7) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(Y   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+BACKFROMhand 4: 5 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 6 (8) X(Y   0   5)(Y   5   2)(Y   2   8)X
+TESTdom  4: 6 (8) (N   6   0)
+TESThand 4: 6 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 8 (8) X(Y   0   5)(Y   5   2)(Y   2   8)X
+TESTdom  4: 8 (8) (N   5   6)
+TESThand 4: 8 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 4: 11 (8) X(Y   0   5)(Y   5   2)(Y   2   8)X
+TESTdom  4: 11 (8) (N   4   1)
+TESThand 4: 11 (8) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(Y   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+BACKFROMhand 3: 7 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 8 (2) X(Y   0   5)(Y   5   2)X
+TESTdom  3: 8 (2) (N   5   6)
+TESThand 3: 8 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 3: 11 (2) X(Y   0   5)(Y   5   2)X
+TESTdom  3: 11 (2) (N   4   1)
+TESThand 3: 11 (2) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(Y   5   2)(Y   0   5)(N   4   1)X
+
+BACKFROMhand 2: 9 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+TESTcurr 2: 11 (5) X(Y   0   5)X
+TESTdom  2: 11 (5) (N   4   1)
+TESThand 2: 11 (5) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(N   5   2)(Y   0   5)(N   4   1)X
+
+BACKFROMhand 1: 10 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(N   5   2)(N   0   5)(N   4   1)X
+
+TESTcurr 1: 11 (0) XX
+TESTdom  1: 11 (0) (N   4   1)
+TESThand 1: 11 (0) X(N   2   2)(N   5  11)(N   8   3)(N   5  10)(N  12   4)(N   8   7)(N   6   0)(N   2   8)(N   5   6)(N   5   2)(N   0   5)(N   4   1)X
+
+Main:  end execution

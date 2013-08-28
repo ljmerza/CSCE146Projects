@@ -1,0 +1,1465 @@
+Driver:  beginning
+Driver:  the empty voteSummary is
+There are 2 entries
+going forward
+  0: Dummy Node
+  1: Dummy Node
+
+VOTE:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+LIST: There are 3 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+  2: Dummy Node
+
+VOTE:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+DLLA:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+LIST: There are 4 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+  3: Dummy Node
+
+VOTE:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+LIST: There are 5 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+  3:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+  4: Dummy Node
+
+VOTE:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+DLLA:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+LIST: There are 6 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  3:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+  4:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+  5: Dummy Node
+
+VOTE:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+LIST: There are 7 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  3:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  4:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+  5:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+  6: Dummy Node
+
+VOTE:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+LIST: There are 8 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  3:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  4:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+  5:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+  6:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+  7: Dummy Node
+
+VOTE:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+LIST: There are 9 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  3:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  4:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+  5:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+  6:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+  7:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+  8: Dummy Node
+
+VOTE:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+DLLA:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+LIST: There are 10 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  3:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  4:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  5:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+  6:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+  7:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+  8:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+  9: Dummy Node
+
+VOTE:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+LIST: There are 11 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  3:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  4:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  5:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+  6:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+  7:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+  8:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+  9:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 10: Dummy Node
+
+VOTE:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+LIST: There are 12 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  3:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  4:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  5:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+  6:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+  7:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+  8:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+  9:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 10:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 11: Dummy Node
+
+VOTE:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+LIST: There are 13 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  3:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  4:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  5:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+  6:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+  7:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+  8:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+  9:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 10:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 11:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 12: Dummy Node
+
+VOTE:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+DLLA:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+LIST: There are 14 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  3:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  4:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  5:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  6:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+  7:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+  8:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+  9:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 10:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 11:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 12:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 13: Dummy Node
+
+VOTE:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+LIST: There are 15 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  3:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  4:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  5:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  6:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+  7:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+  8:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+  9:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 10:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 11:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 12:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 13:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 14: Dummy Node
+
+VOTE:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+LIST: There are 16 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  3:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  4:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  5:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  6:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+  7:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+  8:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+  9:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 10:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 11:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 12:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 13:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 14:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 15: Dummy Node
+
+VOTE:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+DLLA:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+DLLA:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+DLLA:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+LIST: There are 17 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  4:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  5:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  6:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  7:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+  8:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+  9:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 10:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 11:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 12:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 13:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 14:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 15:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 16: Dummy Node
+
+VOTE:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+LIST: There are 18 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  4:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  5:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  6:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  7:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+  8:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+  9:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 10:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 11:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 12:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 13:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 14:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 15:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 16:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 17: Dummy Node
+
+VOTE:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+DLLA:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+DLLB:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+LIST: There are 19 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  4:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  5:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  6:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+  7:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  8:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+  9:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 10:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 11:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 12:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 13:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 14:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 15:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 16:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 17:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 18: Dummy Node
+
+VOTE:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+LIST: There are 20 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  4:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  5:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  6:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+  7:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  8:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+  9:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 10:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 11:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 12:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 13:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 14:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 15:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 16:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 17:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 18:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 19: Dummy Node
+
+VOTE:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+LIST: There are 21 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  4:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  5:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  6:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+  7:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  8:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+  9:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 10:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 11:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 12:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 13:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 14:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 15:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 16:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 17:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 18:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 19:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 20: Dummy Node
+
+VOTE:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+DLLA:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+LIST: There are 22 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  5:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  6:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  7:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+  8:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  9:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 10:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 11:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 12:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 13:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 14:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 15:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 16:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 17:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 18:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 19:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 20:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 21: Dummy Node
+
+VOTE:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+LIST: There are 23 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  5:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  6:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  7:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+  8:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+  9:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 10:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 11:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 12:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 13:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 14:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 15:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 16:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 17:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 18:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 19:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 20:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 21:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+ 22: Dummy Node
+
+VOTE:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLA:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+LIST: There are 24 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  5:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  6:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  7:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+  8:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+  9:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+ 10:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 11:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 12:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 13:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 14:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 15:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 16:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 17:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 18:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 19:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 20:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 21:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 22:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+ 23: Dummy Node
+
+VOTE:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+LIST: There are 25 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  5:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  6:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  7:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+  8:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+  9:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+ 10:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 11:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 12:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 13:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+ 14:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 15:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 16:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 17:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 18:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 19:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 20:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 21:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 22:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 23:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+ 24: Dummy Node
+
+VOTE:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+LIST: There are 26 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  5:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  6:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  7:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+  8:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+  9:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+ 10:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 11:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 12:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 13:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+ 14:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 15:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 16:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 17:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 18:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 19:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+ 20:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 21:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 22:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 23:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 24:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+ 25: Dummy Node
+
+VOTE:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+DLLA:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+LIST: There are 27 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+  5:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  6:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  7:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  8:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+  9:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+ 10:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+ 11:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 12:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 13:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 14:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+ 15:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 16:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 17:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 18:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 19:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 20:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+ 21:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 22:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 23:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 24:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 25:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+ 26: Dummy Node
+
+VOTE:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLA:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLB:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLB:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLB:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLB:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLB:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLB:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+LIST: There are 28 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+  5:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  6:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  7:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  8:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+  9:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+ 10:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+ 11:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+ 12:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 13:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 14:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 15:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+ 16:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 17:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 18:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 19:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 20:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 21:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+ 22:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 23:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 24:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 25:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 26:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+ 27: Dummy Node
+
+VOTE:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+LIST: There are 29 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+  5:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  6:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  7:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  8:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+  9:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+ 10:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+ 11:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+ 12:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 13:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 14:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 15:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+ 16:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+ 17:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 18:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 19:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 20:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 21:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 22:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+ 23:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 24:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 25:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 26:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 27:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+ 28: Dummy Node
+
+VOTE:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+LIST: There are 30 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+  5:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  6:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  7:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  8:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+  9:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+ 10:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+ 11:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+ 12:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 13:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 14:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 15:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+ 16:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+ 17:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 18:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 19:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 20:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 21:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 22:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+ 23:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+ 24:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 25:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 26:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 27:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 28:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+ 29: Dummy Node
+
+VOTE:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+DLLA:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+LIST: There are 31 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+  5:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+  6:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  7:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  8:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  9:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+ 10:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+ 11:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+ 12:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+ 13:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 14:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 15:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 16:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+ 17:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+ 18:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 19:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 20:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 21:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 22:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 23:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+ 24:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+ 25:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 26:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 27:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 28:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 29:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+ 30: Dummy Node
+
+VOTE:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+LIST: There are 32 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+  5:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+  6:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  7:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  8:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  9:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+ 10:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+ 11:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+ 12:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+ 13:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+ 14:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 15:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 16:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 17:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+ 18:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+ 19:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 20:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 21:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 22:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 23:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 24:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+ 25:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+ 26:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 27:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 28:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 29:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 30:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+ 31: Dummy Node
+
+VOTE:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+LIST: There are 33 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+  5:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+  6:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  7:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  8:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  9:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+ 10:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+ 11:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+ 12:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+ 13:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+ 14:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 15:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 16:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 17:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+ 18:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+ 19:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+ 20:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 21:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 22:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 23:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 24:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 25:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+ 26:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+ 27:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 28:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 29:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 30:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 31:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+ 32: Dummy Node
+
+VOTE:   305   5138461     2    16   115   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    16   115   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    16   115   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    16   115   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    16   115   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    16   115   Ashley Cooper LIEUTENANT GOVERNOR
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+LIST: There are 34 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+  5:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+  6:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  7:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  8:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+  9:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+ 10:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+ 11:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+ 12:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+ 13:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+ 14:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 15:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 16:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 17:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+ 18:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+ 19:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+ 20:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 21:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 22:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 23:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 24:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 25:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+ 26:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+ 27:   305   5138461     2    16   115   Ashley Cooper LIEUTENANT GOVERNOR
+ 28:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 29:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 30:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 31:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 32:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+ 33: Dummy Node
+
+VOTE:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5138461     2    16   115   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+DLLA:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+DLLB:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+LIST: There are 35 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+  5:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+  6:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+  7:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  8:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  9:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+ 10:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+ 11:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+ 12:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+ 13:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+ 14:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+ 15:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 16:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 17:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 18:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+ 19:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+ 20:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+ 21:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 22:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 23:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 24:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 25:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 26:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+ 27:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+ 28:   305   5138461     2    16   115   Ashley Cooper LIEUTENANT GOVERNOR
+ 29:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 30:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 31:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 32:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 33:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+ 34: Dummy Node
+
+VOTE:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5138461     2    16   115   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+DLLB:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+LIST: There are 36 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+  5:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+  6:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+  7:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  8:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  9:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+ 10:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+ 11:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+ 12:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+ 13:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+ 14:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+ 15:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+ 16:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 17:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 18:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 19:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+ 20:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+ 21:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+ 22:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 23:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 24:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 25:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 26:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 27:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+ 28:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+ 29:   305   5138461     2    16   115   Ashley Cooper LIEUTENANT GOVERNOR
+ 30:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 31:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 32:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 33:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 34:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+ 35: Dummy Node
+
+VOTE:   305   5138461     2    65   118   Amy McCulloch PROBATE JUDGE
+DLLA:   305   5138461     2    65   118   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    65   118   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    65   118   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    65   118   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    65   118   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+DLLA:   305   5138461     2    65   118   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5138461     2    16   115   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    65   118   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    65   118   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    65   118   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    65   118   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    65   118   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    65   118   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+DLLA:   305   5138461     2    65   118   Amy McCulloch PROBATE JUDGE
+DLLB:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+LIST: There are 37 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+  5:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+  6:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+  7:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  8:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  9:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+ 10:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+ 11:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+ 12:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+ 13:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+ 14:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+ 15:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+ 16:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 17:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 18:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 19:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+ 20:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+ 21:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+ 22:   305   5138461     2    65   118   Amy McCulloch PROBATE JUDGE
+ 23:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 24:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 25:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 26:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 27:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 28:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+ 29:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+ 30:   305   5138461     2    16   115   Ashley Cooper LIEUTENANT GOVERNOR
+ 31:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 32:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 33:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 34:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 35:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+ 36: Dummy Node
+
+Driver:  the voteSummary is now
+There are 37 entries
+going forward
+  0: Dummy Node
+  1:   305   5121076     2    27     1   Alan Wilson ATTORNEY GENERAL
+  2:   305   5135064     2    27     7   Alan Wilson ATTORNEY GENERAL
+  3:   305   5136068     2    27     4   Alan Wilson ATTORNEY GENERAL
+  4:   305   5137738     2    27     2   Alan Wilson ATTORNEY GENERAL
+  5:   305   5137832     2    27     2   Alan Wilson ATTORNEY GENERAL
+  6:   305   5138461     2    27     3   Alan Wilson ATTORNEY GENERAL
+  7:   305   5121076     2    51   105   Alvin M Greene U.S. SENATOR
+  8:   305   5131255     2    51    92   Alvin M Greene U.S. SENATOR
+  9:   305   5133311     2    51    90   Alvin M Greene U.S. SENATOR
+ 10:   305   5135064     2    51    77   Alvin M Greene U.S. SENATOR
+ 11:   305   5136068     2    51    88   Alvin M Greene U.S. SENATOR
+ 12:   305   5137738     2    51    75   Alvin M Greene U.S. SENATOR
+ 13:   305   5137832     2    51   103   Alvin M Greene U.S. SENATOR
+ 14:   305   5138461     2    51    88   Alvin M Greene U.S. SENATOR
+ 15:   305   5121076     2    65   128   Amy McCulloch PROBATE JUDGE
+ 16:   305   5131255     2    65   130   Amy McCulloch PROBATE JUDGE
+ 17:   305   5133311     2    65   109   Amy McCulloch PROBATE JUDGE
+ 18:   305   5135064     2    65   109   Amy McCulloch PROBATE JUDGE
+ 19:   305   5136068     2    65   130   Amy McCulloch PROBATE JUDGE
+ 20:   305   5137738     2    65   122   Amy McCulloch PROBATE JUDGE
+ 21:   305   5137832     2    65   135   Amy McCulloch PROBATE JUDGE
+ 22:   305   5138461     2    65   118   Amy McCulloch PROBATE JUDGE
+ 23:   305   5121076     2    16   126   Ashley Cooper LIEUTENANT GOVERNOR
+ 24:   305   5131255     2    16   130   Ashley Cooper LIEUTENANT GOVERNOR
+ 25:   305   5133311     2    16   113   Ashley Cooper LIEUTENANT GOVERNOR
+ 26:   305   5135064     2    16   109   Ashley Cooper LIEUTENANT GOVERNOR
+ 27:   305   5136068     2    16   127   Ashley Cooper LIEUTENANT GOVERNOR
+ 28:   305   5137738     2    16   122   Ashley Cooper LIEUTENANT GOVERNOR
+ 29:   305   5137832     2    16   133   Ashley Cooper LIEUTENANT GOVERNOR
+ 30:   305   5138461     2    16   115   Ashley Cooper LIEUTENANT GOVERNOR
+ 31:   305   5121076     2    42    15   Bob Livingston ADJUTANT GENERAL
+ 32:   305   5131255     2    42    13   Bob Livingston ADJUTANT GENERAL
+ 33:   305   5133311     2    42     8   Bob Livingston ADJUTANT GENERAL
+ 34:   305   5135064     2    42    21   Bob Livingston ADJUTANT GENERAL
+ 35:   305   5136068     2    42    18   Bob Livingston ADJUTANT GENERAL
+ 36: Dummy Node
+
+Driver:  ending

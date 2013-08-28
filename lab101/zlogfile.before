@@ -1,0 +1,30 @@
+Driver:  create the flat file and write it
+Driver:  file created is
+
+File is empty.
+Driver:  empty file was created
+Driver:  read the data
+Driver:  data has been read
+Driver:  write the file as read
+Driver:  file read was
+
+subscript 0 Herbert    2A41  789.0123   390
+subscript 1 Lander     2A47  789.7890   146
+subscript 2 Winthrop   3A71  789.4667   611
+subscript 3 Marion     2A13  789.1536   750
+subscript 4 Adams      3A56  789.8702   522
+subscript 5 Smith      2A46  789.5275   101
+subscript 6 Axolotl    3A22  789.2749   102
+subscript 7 Zokni      3A39  789.9111   350
+subscript 8 Igen       2A21  789.6050   240
+subscript 9 Nem        2A89  789.3383   790
+Driver:  done with the write
+Driver:  search for name 'Smith'
+FlatFile:  found 'Smith' after 6 probes
+Driver:  name 'Smith' appears as
+Smith      2A46  789.5275   101
+Driver:  done with the first search
+Driver:  search for name 'Buell'
+FlatFile:  did not find 'Buell' after 10 probes
+Driver:  name 'Buell' not in the file 
+Driver:  done with the second search

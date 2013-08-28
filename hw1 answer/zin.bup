@@ -1,0 +1,19 @@
+add Herbert  2A41 789.0123 390
+add Lander   2A47 789.7890 146
+add Winthrop 3A71 789.4667 611
+add Marion   2A13 789.1536 750
+add Adams    3A56 789.8702 522
+add Smith    2A46 789.5275 101
+add Axolotl  3A22 789.2749 102
+add Zokni    3A39 789.9111 350
+add Igen     2A21 789.6050 240
+add Nem      2A89 789.3383 790
+contains Marion
+remove   Adams
+contains Buell
+contains Smith
+remove   Smith
+contains Smith
+remove   Nem
+remove   Herbert
+stop
